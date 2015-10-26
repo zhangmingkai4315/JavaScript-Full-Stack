@@ -1,0 +1,21 @@
+@the-border:1px;
+@base-color:#111;
+@red:#842210;
+
+
+.rounded-corners(@radius:5px){
+  border-radius:@radius;
+  -webkit-border-radius:@radius;
+  -moz-border-radius:@radius;
+}
+
+#header{
+  color: @base-color*3;
+  border-left:@the-border;
+  border-right: @the-border *2;
+  .rounded-corners();
+}
+
+#footer{
+  .rounded-corners(10px);
+}
